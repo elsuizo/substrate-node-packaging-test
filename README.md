@@ -4,8 +4,13 @@
 
 A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
 A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
 
 ## Getting Started
+
+Follow the steps below to get started with the Node Template, or get it up and running right from
+your browser in just a few clicks using
+the [Substrate Playground](https://docs.substrate.io/playground/) :hammer_and_wrench:
 
 Follow the steps below to get started with the Node Template, or get it up and running right from
 your browser in just a few clicks using
