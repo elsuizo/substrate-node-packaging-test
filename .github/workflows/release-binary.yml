@@ -24,8 +24,8 @@ jobs:
       matrix:
         os:
           - ubuntu-latest
-          - macos-latest
-          - windows-latest
+          # - macos-latest
+          # - windows-latest
     runs-on: ${{ matrix.os }}
     if: github.repository_owner == 'elsuizo'
     needs:
@@ -43,9 +43,9 @@ jobs:
           sudo apt-get update && sudo apt-get install -y \
             libgtk-3-dev
         if: startsWith(matrix.os, 'ubuntu')
-      - name: Install MacOS dependencies
-        run: brew install cairo
-        if: startsWith(matrix.os, 'macos')
+      # - name: Install MacOS dependencies
+      #   run: brew install cairo
+      #   if: startsWith(matrix.os, 'macos')
       - uses: taiki-e/upload-rust-binary-action@v1
         with:
           # (required)
@@ -59,7 +59,7 @@ jobs:
           # (optional) On which platform to distribute the `.zip` file.
           # [default value: windows]
           # [possible values: all, unix, windows, none]
-          zip: windows
+          # zip: windows
         env:
           # (required)
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
