@@ -51,7 +51,7 @@ jobs:
         with:
           # (required)
           # kindle-notes-core won't be built because it's a lib and not a bin
-          bin: 'substrate-node-bin'
+          bin: 'node-template'
           target: ${{ matrix.target }}
           # (optional) On which platform to distribute the `.tar.gz` file.
           # [default value: unix]
