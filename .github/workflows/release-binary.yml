@@ -11,10 +11,10 @@ jobs:
     permissions: write-all
     steps:
       - uses: actions/checkout@v2
-      - uses: taiki-e/create-gh-release-action@v1
       - uses: taiki-e/github-actions/install-rust@main
         with:
           toolchain: ${{ matrix.rust || 'nightly' || 'wasm32-unknown-unknown' }}
+      - uses: taiki-e/create-gh-release-action@v1
           # toolchain: ${{ matrix.rust || 'wasm32-unknown-unknown' }}
         # with:
         #   # (optional) Path to changelog.
