@@ -9,6 +9,7 @@ pub struct Cli {
 	pub run: RunCmd,
 }
 
+/// Como puede ser que no ande...
 #[derive(Debug, clap::Subcommand)]
 pub enum Subcommand {
 	/// Key management cli utilities
