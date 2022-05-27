@@ -40,7 +40,7 @@ jobs:
       - name: Update Linux Repositories
         # run: sudo apt-get update
         run: |
-             rustup toolchain install nightly --allow-downgrade --profile minimal --component clippy \
+             rustup default nightly \
              rustup target add wasm32-unknown-unknown --toolchain nightly
         if: startsWith(matrix.os, 'ubuntu')
       - name: Install Ubuntu dependencies
