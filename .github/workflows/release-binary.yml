@@ -38,7 +38,10 @@ jobs:
       #     toolchain: ${{ matrix.rust || 'nightly' }}
       #     toolchain: ${{ matrix.rust || 'wasm32-unknown-unknown' }}
       - name: Update Linux Repositories
-        run: rustup target add wasm32-unknown-unknown
+        # run: sudo apt-get update
+        run: |
+             rustup toolchain install nightly --allow-downgrade --profile minimal --component clippy \
+             rustup target add wasm32-unknown-unknown --toolchain nightly
         if: startsWith(matrix.os, 'ubuntu')
       - name: Install Ubuntu dependencies
         run: |
