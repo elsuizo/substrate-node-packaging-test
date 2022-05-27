@@ -33,15 +33,13 @@ jobs:
       - create-release
     steps:
       - uses: actions/checkout@v2
-      # - uses: taiki-e/github-actions/install-rust@main
-      #   with:
-      #     toolchain: ${{ matrix.rust || 'nightly' }}
-      #     toolchain: ${{ matrix.rust || 'wasm32-unknown-unknown' }}
+      - uses: taiki-e/github-actions/install-rust@main
+        with:
+          toolchain: ${{ matrix.rust || 'nightly' }}
+          toolchain: ${{ matrix.rust || 'wasm32-unknown-unknown' }}
       - name: Update Linux Repositories
-        # run: sudo apt-get update
-        run: |
-             rustup update nightly \
-             rustup target add wasm32-unknown-unknown --toolchain nightly
+        run: sudo apt-get update
+        # run: rustup target add wasm32-unknown-unknown --toolchain nightly
         if: startsWith(matrix.os, 'ubuntu')
       - name: Install Ubuntu dependencies
         run: |
