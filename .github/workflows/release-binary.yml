@@ -38,7 +38,7 @@ jobs:
       #     toolchain: ${{ matrix.rust || 'nightly' }}
       #     toolchain: ${{ matrix.rust || 'wasm32-unknown-unknown' }}
       - name: Update Linux Repositories
-        run: rustup target add wasm32-unknown-unknown --toolchain nightly
+        run: rustup target add wasm32-unknown-unknown
         if: startsWith(matrix.os, 'ubuntu')
       - name: Install Ubuntu dependencies
         run: |
