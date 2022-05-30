@@ -42,6 +42,7 @@ jobs:
       - name: Install Rustup
         # run: sudo apt-get update
         run: |
+          sudo apt install git clang curl libssl-dev llvm libudev-dev pkg-config
           curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
           source ~/.cargo/env
           rustup default stable
