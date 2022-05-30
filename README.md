@@ -6,8 +6,12 @@ A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacki
 A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
 A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
 
+A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+
 ## Getting Started
-Como puede ser que no ande
+Esto es un texto que pongo para testear la compilacion...
 
 ### Using Nix
 
